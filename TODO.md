@@ -1,5 +1,5 @@
 - [x] Update Contact.vue script to match reference format
-- [x] Change SITE_KEY to '6Lc4-skrAAAAACKL1DHT6fNvi0lv4fnl-ut54u-e'
+- [x] Change to declarative reCAPTCHA with data-sitekey '6Lc4-skrAAAAACKL1DHT6fNvi0lv4fnl-ut54u-e'
 - [x] Keep current WEB3FORMS_ACCESS_KEY
 - [x] Add 'g-recaptcha-response': recaptchaToken.value to the API body
 - [x] Verify the refactored code works correctly

@@ -55,10 +55,6 @@
         }
     };
 
-    const SITE_KEY = "6Lc4-skrAAAAACKL1DHT6fNvi0lv4fnl-ut54u-e";
-
-    const recaptchaContainer = ref(null);
-    const recaptchaWidgetId = ref(null);
     const recaptchaToken = ref("");
 
     // Callback called by reCAPTCHA when successful
@@ -71,44 +67,18 @@
         recaptchaToken.value = "";
     }
 
-    // Function to render the reCAPTCHA widget
-    function renderRecaptcha() {
-        if (!window.grecaptcha) {
-            console.error("reCAPTCHA not loaded");
-            return;
-        }
-
-        recaptchaWidgetId.value = window.grecaptcha.render(recaptchaContainer.value, {
-            sitekey: SITE_KEY,
-            size: "normal", // or 'compact'
-            callback: onRecaptchaSuccess,
-            "expired-callback": onRecaptchaExpired,
-        });
-    }
-
     // Function to reset reCAPTCHA
     function resetRecaptcha() {
-        if (recaptchaWidgetId.value !== null) {
-            window.grecaptcha.reset(recaptchaWidgetId.value);
-            recaptchaToken.value = "";
+        if (window.grecaptcha) {
+            window.grecaptcha.reset();
         }
+        recaptchaToken.value = "";
     }
 
     onMounted(() => {
-        // This code waits for the Google reCAPTCHA library to load, then renders the reCAPTCHA widget using onMounted hook.
-        // The widget is rendered with grecaptcha.render(), which requires a sitekey.
-        // Callback functions handle success and expiration events.
-        // reCAPTCHA is reset upon form submission to clear the token.
-        const interval = setInterval(() => {
-            if (window.grecaptcha && window.grecaptcha.render) {
-                renderRecaptcha();
-                clearInterval(interval);
-            }
-        }, 100);
-
-        onBeforeUnmount(() => {
-            clearInterval(interval);
-        });
+        // Set global callbacks for reCAPTCHA
+        window.onRecaptchaSuccess = onRecaptchaSuccess;
+        window.onRecaptchaExpired = onRecaptchaExpired;
     });
 
 </script>
@@ -142,7 +112,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end mt-2">
-                    <div ref="recaptchaContainer"></div>
+                    <div class="g-recaptcha" data-sitekey="6Lc4-skrAAAAACKL1DHT6fNvi0lv4fnl-ut54u-e" data-callback="onRecaptchaSuccess" data-expired-callback="onRecaptchaExpired"></div>
                 </div>
             </form>
 
