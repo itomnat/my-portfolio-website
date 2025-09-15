@@ -6,7 +6,7 @@
 
     const notyf = new Notyf();
 
-    const WEB3FORMS_ACCESS_KEY = "cabb4188-53c4-4051-82e5-7b1976240c87";
+    const WEB3FORMS_ACCESS_KEY = "07b02fee-40d2-49eb-9a9a-c36ee1dc6e5c";
 
     const name = ref("");
     const email = ref("");
@@ -34,7 +34,8 @@
                     subject: "Contact Form Submission from Portfolio Website",
                     name: name.value,
                     email: email.value,
-                    message: message.value
+                    message: message.value,
+                    'g-recaptcha-response': recaptchaToken.value
                 })
             })
 
@@ -57,7 +58,7 @@
 
     }
 
-    const SITE_KEY = '6Lci-cYrAAAAAKcfM0oQg76n9wiCJA-CtJTI0TJ2';  // Replace with your site key
+    const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '6Lci-cYrAAAAAKcfM0oQg76n9wiCJA-CtJTI0TJ2';  // Fallback for development
 
     const recaptchaContainer = ref(null);
     const recaptchaWidgetId = ref(null);
