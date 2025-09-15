@@ -58,7 +58,7 @@
 
     }
 
-    const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '6Lci-cYrAAAAAKcfM0oQg76n9wiCJA-CtJTI0TJ2';  // Fallback for development
+    const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '6Lc4-skrAAAAACKL1DHT6fNvi0lv4fnl-ut54u-e';  // Fallback for development
 
     const recaptchaContainer = ref(null);
     const recaptchaWidgetId = ref(null);
