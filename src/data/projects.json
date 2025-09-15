@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "E-commerce API Documentation",
+        "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. Documented Backend API published publicly using Postman.",
+        "image": "https://images.pexels.com/photos/6956919/pexels-photo-6956919.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Course Booking API Documentation",
+        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and course lifecycle. Publicly documented using Postman.",
+        "image": "https://images.pexels.com/photos/18069157/pexels-photo-18069157.png"
+    },
+    {
+        "id": 3,
+        "title": "Course Booking App",
+        "description": "MERN-stack system with course and user management. Authenticated users can browse, enroll, and manage course records.",
+        "image": "https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "Airline Booking System Mockup",
+        "description": "Side Project: Conceptual UI design for flight search, seat selection, and booking confirmation.",
+        "image": "https://images.pexels.com/photos/4467739/pexels-photo-4467739.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "Airline Booking System Prototype",
+        "description": "Interactive prototype with flight search, reservations, payment, and ticket tracking features.",
+        "image": "https://images.pexels.com/photos/6215002/pexels-photo-6215002.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "E-Commerce App",
+        "description": "MERN E-commerce Platform. Includes product catalog, filtering, checkout, and analytics dashboard.",
+        "image": "https://images.pexels.com/photos/5239881/pexels-photo-5239881.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Short Course Capstone",
+        "description": "Placeholder for your Short Course Capstone project.",
+        "image": "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Short Course Capstone",
+        "description": "Placeholder for your Short Course Capstone project.",
+        "image": "https://images.pexels.com/photos/8386709/pexels-photo-8386709.jpeg"
+    },
+    {
+        "id": 9,
+        "title": "New Project",
+        "description": "Placeholder for your Short Course Capstone project.",
+        "image": "https://images.pexels.com/photos/5243990/pexels-photo-5243990.jpeg"
+    }
+]

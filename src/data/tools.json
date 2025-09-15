@@ -1,0 +1,20 @@
+{
+  "frontEnd": [
+    { "name": "HTML", "icon": "/images/tools/html.svg" },
+    { "name": "CSS", "icon": "/images/tools/css.svg" },
+    { "name": "Bootstrap", "icon": "/images/tools/bootstrap.svg" },
+    { "name": "JavaScript", "icon": "/images/tools/js.svg" }
+  ],
+  "mern": [
+    { "name": "MongoDB", "icon": "/images/tools/mongodb.svg" },
+    { "name": "Express", "icon": "/images/tools/expressjs.svg" },
+    { "name": "React", "icon": "/images/tools/react.svg" },
+    { "name": "Node.js", "icon": "/images/tools/nodejs.svg" }
+  ],
+  "other": [
+    { "name": "Heroku", "icon": "/images/tools/heroku.svg" },
+    { "name": "Git", "icon": "/images/tools/git.svg" },
+    { "name": "Postman", "icon": "/images/tools/postman.svg" },
+    { "name": "Sublime", "icon": "/images/tools/sublime.svg" }
+  ]
+}
